@@ -133,7 +133,13 @@ if (typeof typeNum === "number") {
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const evenNum = 5;
+
+if (evenNum % 2 === 0) {
+  console.log("Il numero è pari.");
+} else {
+  console.log("Il numero è dispari.");
+}
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -159,28 +165,44 @@ const me = {
   skills: ["javascript", "html", "css"],
 };
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+me.city = "Toronto";
+console.log(me.city);
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+delete me.lastName;
+console.log(me);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+me.skills.pop();
+console.log(me.skills);
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let arrayNum = [];
+arrayNum.unshift(1);
+arrayNum.push(2);
+arrayNum.push(3);
+arrayNum.push(4);
+arrayNum.push(5);
+arrayNum.push(6);
+arrayNum.push(7);
+arrayNum.push(8);
+arrayNum.push(9);
+arrayNum.push(10);
+
+console.log(arrayNum);
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+arrayNum.splice(arrayNum.length - 1, 1, 100);
+console.log(arrayNum);
